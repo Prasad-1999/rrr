@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page</title>
+    <style>
+        .navbar{grid-area: home;height:10vh;background: blue;}
+        .img{grid:img;height:1vh}
+        .container{
+            display:grid;
+            grid-template-areas: "home home home home home home"
+            "img img img img img img";
+        }
+        .container div{
+            text-align: center;
+        }
+        .home{
+            position:absolute;
+            top:5%;
+        }
+        .logo{
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar"><div class="home">home</div> gallery </div>
+        <div class="img"><img class="logo" src="RRR image.webp" alt="">img</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: email;
+        height: 3vh;  }
+.item2 { grid-area: header;
+        height: 12vh; }
+.item3 { grid-area: image;
+        height: 12vh; }
+.item4 { grid-area: getin;
+        height: 45vh; }
+.item5 { grid-area: epayment;
+        height: 45vh; }
+.item6 { grid-area: heading;
+        height: 3vh; }
+.item7 { grid-area: route1;
+        height: 80vh; }
+.item8 { grid-area: route2;
+        height: 80vh; }
+.item9 { grid-area: f1;
+        height: 45vh; }
+.item10 { grid-area: f2;
+        height: 45vh; }
+.item11 { grid-area: f3;
+        height: 45vh; }
+.item12 { grid-area: bottom;
+        height: 3vh; }
+
+.grid-container {
+display: grid;
+grid-template-areas:
+    'email email email email email email'
+    'header header header header header header'
+    'image image image image image image'
+    'getin getin getin epayment epayment epayment'
+    'heading heading heading heading heading heading'
+    'route1 route1 route1 route2 route2 route2'
+    'f1 f1 f2 f2 f3 f3'
+    'bottom bottom bottom bottom bottom bottom';
+gap: 3px;
+}
+
+.grid-container > div {
+  background-color: #2d46a97d;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 25px;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="item1">Email</div>
+  <div class="item2">Header</div>
+  <div class="item3">Image</div>  
+  <div class="item4">GetIn</div>
+  <div class="item5">Epayment</div>
+  <div class="item6">Heading</div>
+  <div class="item7">Route1</div>
+  <div class="item8">Route2</div>
+  <div class="item9">F1</div>
+  <div class="item10">F2</div>
+  <div class="item11">F3</div>
+  <div class="item12">Bottom</div>
+</div>
+</body>
+</html>
